@@ -14,4 +14,4 @@
 | RFID_ACCESS  |Read RFID via ardouino (serial communication) |
 | M&L DETECTOR | Create Your Own Motion Light Detector |
 | Digi7Segment| Controle 7 Segment Display Via Ardouino - (Serial Communication) |
-| README.md | The readme for this projec
+| README.md | The readme for this project
