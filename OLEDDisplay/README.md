@@ -1,6 +1,6 @@
 # OLEDDispaly
 - Controle OLED Display Via Ardouino - (Serial Communication)                     
-![](OLEDDispaly.jpg) 
+![](OLEDDisplay.jpg) 
 
 
 ## Built With
