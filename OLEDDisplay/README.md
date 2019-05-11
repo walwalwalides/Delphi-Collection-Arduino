@@ -1,12 +1,12 @@
 # OLEDDispaly
 - Controle OLED Display Via Ardouino - (Serial Communication)                     
-![](OLEDDispaly.png) 
+![](OLEDDisplay.jpg) 
 
 
 ## Built With
 
 * [OLED Library](https://github.com/walwalwalides/Delphi-Component/tree/master/OLED%20Library) - OLED Library( by WalWalWalides )
-
+* [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306) - Adafruit_SSD1306
 
 # Features  
 
