@@ -1,7 +1,7 @@
 # RGB_LED_MIXER
-- Create Your Own RGB LED Controller
+- Create Your Own RGB LED Controller Using RGB LED Module.
 
-![](RGB_LED_MIXER.png) 
+![](RGB_LED_MIXER.jpg) 
 
 ## Files
 
