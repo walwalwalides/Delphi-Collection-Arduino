@@ -5,7 +5,7 @@
 
 ## Built With
 
-* [RGB MIXER Library](https://github.com/…/Delp…/tree/master/RGB%20Mixer%20Library) - RGB MIXER Library ( by WalWalWalides )
+* [RGB MIXER Library](https://github.com/walwalwalides/Delphi-Component/tree/master/RGB%20Mixer%20Library) - RGB MIXER Library ( by WalWalWalides )
 
 
 
