@@ -3,6 +3,12 @@
 
 ![](RGB_LED_MIXER.jpg) 
 
+## Built With
+
+* [RGB MIXER Library](https://github.com/walwalwalides/Delphi-Component/tree/master/RGB%20Mixer%20Library) - RGB MIXER Library ( by WalWalWalides )
+
+
+
 ## Files
 
 | File | Contents | 
