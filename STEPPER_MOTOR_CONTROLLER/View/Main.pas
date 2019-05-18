@@ -26,7 +26,7 @@ type
   TfrmMain = class(TForm)
     ComPort: TComPort;
     Memo: TMemo;
-    chkPoint: TCheckBox;
+    chkBoucle: TCheckBox;
     spedtSeg: TSpinEdit;
     Button_Open: TBitBtn;
     Button_Settings: TBitBtn;
@@ -37,7 +37,7 @@ type
     bvlbottom: TBevel;
     tmr7Seg: TTimer;
     BitBtnTimer: TBitBtn;
-    TrackBarTimer: TTrackBar;
+    TrackBarSpeed: TTrackBar;
     lblValue1: TLabel;
     lblValue2: TLabel;
     OLEDPanel1: TOLEDPanel;
@@ -82,16 +82,15 @@ type
     procedure spedtSegChange(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure chkPointClick(Sender: TObject);
+    procedure chkBoucleClick(Sender: TObject);
     procedure tmr7SegTimer(Sender: TObject);
     procedure BitBtnTimerClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure TrackBarTimerChange(Sender: TObject);
+    procedure TrackBarSpeedChange(Sender: TObject);
     procedure SMCPotentiometer2Changed(Sender: TObject; index, value: Integer);
     procedure SMCPotentiometer1Changed(Sender: TObject; index, value: Integer);
     procedure BitBtnRotationClick(Sender: TObject);
     procedure ToggleSwitchRotClick(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
     procedure actAboutExecute(Sender: TObject);
     procedure actExitExecute(Sender: TObject);
   private
@@ -130,11 +129,6 @@ var
   );
   kpos: Byte = 0;
 
-procedure TfrmMain.Button1Click(Sender: TObject);
-begin
-  ComPort.WriteStr('5555+');
-end;
-
 procedure TfrmMain.Button_OpenClick(Sender: TObject);
 begin
   if (tmr7Seg.Enabled) then
@@ -151,7 +145,7 @@ begin
   ComPort.StoreSettings(stIniFile, MainPath);
 end;
 
-procedure TfrmMain.chkPointClick(Sender: TObject);
+procedure TfrmMain.chkBoucleClick(Sender: TObject);
 begin
   //
 end;
@@ -162,13 +156,13 @@ begin
   if (ToggleSwitchRot.State = tssOff) and (AIndex = 1) then
   begin
     Str := IntToStr(SMCPotentiometer1.value);
-    Str := Str + '-';
+    Str := Str + '-'+sLineBreak;
     // Str := Str + AnsiString(#13#10);
   end;
   if (ToggleSwitchRot.State = tssOn) and (AIndex = 2) then
   begin
     Str := IntToStr(SMCPotentiometer2.value);
-    Str := Str + '/';
+    Str := Str + '+'+sLineBreak;
   end;
 end;
 
@@ -228,7 +222,8 @@ begin
   // frmMain.WindowState := wsMaximized;
   ComPort.BaudRate := br115200; // Set Default BaudRate
   // ------------------------------------- //
-  TrackBarTimer.Position := 10;
+  TrackBarSpeed.Min := 0;
+  TrackBarSpeed.Max := 100;
 
   MainPath := ExtractFilePath(Application.exename) + iniSetting;
   ModeCon := MdNormal;
@@ -243,6 +238,7 @@ begin
   SMCPotentiometer2.Margins.Left := 15;
   SMCPotentiometer2.Margins.Right := 15;
   SMCPotentiometer2.Margins.Bottom := 15;
+  TrackBarSpeed.Position:=0;
 end;
 
 procedure TfrmMain.FormShow(Sender: TObject);
@@ -305,9 +301,15 @@ begin
 
 end;
 
-procedure TfrmMain.TrackBarTimerChange(Sender: TObject);
+procedure TfrmMain.TrackBarSpeedChange(Sender: TObject);
+//var
+//intPosition:integer;
 begin
-  tmr7Seg.interval := TrackBarTimer.Position * 100; // position 10 = 1s
+ //
+
+// intPosition:=TrackBarSpeed.value;
+//
+// lblSpeed.Caption:=intPosition.ToString;
 end;
 
 procedure TfrmMain.actAboutExecute(Sender: TObject);
@@ -340,44 +342,64 @@ begin
     if (ToggleSwitchRot.State = tssOff) then
     begin
       if (pos('-', Str) > 0) then
-        ComPort.WriteStr(Str);
+      begin
+         ComPort.WriteStr(Str);
+         Str:='';
+      end;
     end;
 
     if (ToggleSwitchRot.State = tssOn) then
     begin
-      if (pos('/', Str) > 0) then
+      if (pos('+', Str) > 0) then
+      begin
         ComPort.WriteStr(Str);
+        Str:='';
+      end;
     end;
+
+  end
+  else
+  begin
+
+     if (ToggleSwitchRot.State = tssOff) then
+    begin
+      if (TrackBarSpeed.Position > 0) then
+      begin
+         if (chkBoucle.Checked) then
+        begin
+         Str:=TrackBarSpeed.Position.ToString+'T-'+sLineBreak;
+        end;
+
+        ComPort.WriteStr(Str);
+        Str:='';
+      end;
+    end;
+
+    if (ToggleSwitchRot.State = tssOn) then
+    begin
+      if (TrackBarSpeed.Position > 0) then
+      begin
+         if (chkBoucle.Checked) then
+         begin
+          Str:=TrackBarSpeed.Position.ToString+'T+'+sLineBreak;
+         end;
+        ComPort.WriteStr(Str);
+        Str:='';
+      end;
+    end;
+
+
 
   end;
 end;
 
 procedure TfrmMain.BitBtnTimerClick(Sender: TObject);
 begin
-  if not(tmr7Seg.Enabled) then
-  begin
     Memo.Clear;
-    Memo.Lines[0] := 'Timer active -> ';
-    Memo.Lines[1] := sLineBreak;
-    spedtSeg.Enabled := False;
-    chkPoint.Checked := False;
-    chkPoint.Enabled := False;
-    BitBtnTimer.Caption := 'Stop';
-    tmr7Seg.Enabled := True;
-    ModeCon := MdTimer;
-  end
-  else
-  begin
-    Memo.Lines[1] := 'Timer deactive <- ' + Memo.Lines[0];
-    Memo.Lines.Delete(Memo.Lines.Count - 2);
-
-    spedtSeg.Enabled := True;
-    chkPoint.Enabled := True;
-
-    BitBtnTimer.Caption := 'Start';
-    tmr7Seg.Enabled := False;
-    ModeCon := MdNormal;
-  end;
+    Memo.Lines[0] := 'Motor Speed -> '+TrackBarSpeed.Position.ToString;;
+    Str:='';
+    Str:='S'+TrackBarSpeed.Position.ToString+sLineBreak;
+    ComPort.WriteStr(Str);
 
 end;
 
