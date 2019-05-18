@@ -1,16 +1,16 @@
 # SMC
-- Create STEPPER MOTOR CONTROLLER Via Ardouino - (Serial Communication)                     
+- Create a Controller to Control a Stepper Motor Via Ardouino - (Serial Communication)                     
 ![](SMC.jpg) 
 
 
 ## Built With
 
 * [OLED Library](https://github.com/walwalwalides/Delphi-Component/tree/master/OLED%20Library) - OLED Library( by WalWalWalides )
-
+* [ComPort Library](https://sourceforge.net/projects/comport/files/comport/) - ComPort Library ( by Dejan Crnila )
 
 # Features  
 
-- Drive 28BYJ-48 stepper Motor with a ULN2003A driver board and an Arduino Uno .
+- Drive 28BYJ-48 stepper Motor using ULN2003A driver board .
 - Change Rotaion Direction of Stepper Motor .
 
 
