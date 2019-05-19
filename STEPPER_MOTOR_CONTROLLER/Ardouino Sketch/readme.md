@@ -6,6 +6,7 @@
 - 6 Pin cable.
 - Ardouino Uno. 
 - USB Connection cable 0.4m (type B to type A)
+- 1 Pushbutton
 
 
 
