@@ -1,6 +1,6 @@
 # SDT
 - Synchronisation of Date and Time Change and Save to an External Micro SD Card - (Serial Communication)                     
-![](SDT.jpg) 
+![](SDT.png) 
 
 
 ## Built With
