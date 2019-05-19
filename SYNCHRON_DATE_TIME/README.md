@@ -1,12 +1,13 @@
 # SDT
 - Synchronisation of Date and Time Change and Save to an External Micro SD Card - (Serial Communication)                     
-![](SMC.jpg) 
+![](SDT.png) 
 
 
 ## Built With
 
 * [OLED Library](https://github.com/walwalwalides/Delphi-Component/tree/master/OLED%20Library) - OLED Library( by WalWalWalides )
 * [ComPort Library](https://sourceforge.net/projects/comport/files/comport/) - ComPort Library ( by Dejan Crnila )
+* [Time Library ](https://github.com/PaulStoffregen/Time) - Arduino Time Library 
 
 # Features  
 
