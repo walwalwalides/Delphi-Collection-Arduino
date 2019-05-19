@@ -1,6 +1,6 @@
 # SDT
 - Synchronisation of DateTime Change and Save to an External Micro SD Card - (Serial Communication(SPI))                     
-![](SDT.png) 
+![](SDT_.png) 
 
 
 ## Built With
