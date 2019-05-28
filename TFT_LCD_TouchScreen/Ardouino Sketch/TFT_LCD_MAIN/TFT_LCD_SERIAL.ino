@@ -7,10 +7,9 @@
 //{ Email : WalWalWalides@gmail.com              }
 //{ GitHub :https://github.com/walwalwalides     }
 //{ ******************************************** }
-
+//
 void serialEvent() {
   while (Serial.available()) {
-    // get the new byte:
     char inChar = (char)Serial.read();
     // add it to the inputString:
     inputString += inChar;
@@ -18,7 +17,19 @@ void serialEvent() {
     // do something about it:
     if (inChar == '\n') {
       stringComplete = true;
-  
+
     }
+
   }
-} 
+}
+
+//
+//    if (BoolTime=false)
+//    {
+//     processSyncMessage();
+//   if (timeStatus() != timeNotSet && SynchroDT == "") 
+//  {    
+//    digitalClockDisplay();
+//    BoolTime =true;
+//  } 
+//    } 

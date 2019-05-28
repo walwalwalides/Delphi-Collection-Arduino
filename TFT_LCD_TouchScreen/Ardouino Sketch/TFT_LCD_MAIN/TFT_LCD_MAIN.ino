@@ -11,6 +11,11 @@
 #include <Adafruit_GFX.h>    
 #include <TouchScreen.h>
 
+#include <TimeLib.h>
+#define TIME_HEADER  "T"   // Header tag for serial time sync message
+#define TIME_REQUEST  7    // ASCII bell character requests a time sync message 
+#define TIME_MSG_LEN  11   // time sync to PC is HEADER and unix time_t as ten ascii digits
+
 #define LCD_CS A3 
 #define LCD_CD A2 
 #define LCD_WR A1 
@@ -35,11 +40,14 @@
 #define MAGENTA 0xF81F
 #define YELLOW  0xFFE0
 #define WHITE   0xFFFF
+int Hours;
 String myArtical = "";
 String myPrice = "";
 String myString = "";
 String inputString = "";
+String SynchroDT;
 int p;
+bool BoolTime = false;
 char charBuf[50];
 String outputString = ""; // a String to hold incoming data
 bool stringComplete = false;  // whether the string is complete
@@ -51,9 +59,8 @@ TouchScreen ts = TouchScreen(XP, YP, XM, YM, 364);
 boolean buttonEnabled = true;
 
 void setup() {
-  Serial.begin(9600);
-  tft.reset();
-  
+  Serial.begin(9600);  
+  tft.reset();  
   uint16_t identifier = tft.readID();
   tft.begin(identifier);
   tft.setRotation(1);
@@ -81,6 +88,9 @@ void setup() {
   tft.setTextColor(GREEN);
   tft.setTextSize(1);
   tft.print("Please Send Text Trought Serial Port");
+
+  setSyncProvider( requestSync);  
+  Serial.println("Waiting for sync message");
 
 }
 
@@ -116,7 +126,10 @@ char StrContains(char *str, char *sfind)
 void loop() {
 
  if (stringComplete)
-  {
+  {  
+    
+ 
+   
     int stringName = inputString.lastIndexOf('+');
     if (stringName > 0)
     {
@@ -252,17 +265,36 @@ void loop() {
        
    if(p.x>50 && p.x<260 && p.y>200 && p.y<270 && buttonEnabled){
     
-    buttonEnabled = false;
+
     
     pinMode(XM, OUTPUT);
     pinMode(YP, OUTPUT);
     
     tft.fillScreen(WHITE);
     tft.drawRect(0,0,319,240,YELLOW);
-    tft.setCursor(10,70);
+    tft.setCursor(5,70);
     tft.setTextColor(RED);
-    tft.setTextSize(6);
-    tft.print(" Goodbye");
+    tft.setTextSize(3);
+  
+
+    
+   // tft.print(" Goodbye");
+
+    delay(3000);
+    pinMode(XM, OUTPUT);
+    pinMode(YP, OUTPUT);
+    tft.fillScreen(WHITE);
+    tft.drawRect(0,50,319,240,BLUE);
+    tft.setCursor(45,15);
+    tft.setTextColor(BLUE);
+    tft.setTextSize(3);    
+    tft.print(myArtical); 
+    tft.setCursor(45,120); 
+    tft.setTextColor(RED);
+    tft.setTextSize(8);    
+    tft.print(myPrice);     
+       
+       
    }  
   }
 }
