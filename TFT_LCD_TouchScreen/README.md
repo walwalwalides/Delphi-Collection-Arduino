@@ -7,11 +7,13 @@
 
 * [OLED Library](https://github.com/walwalwalides/Delphi-Component/tree/master/OLED%20Library) - OLED Library( by WalWalWalides )
 
-* [CONTACT Library](https://github.com/walwalwalides/Delphi-Component/tree/master/OLED%20Library) - OLED Library( by WalWalWalides )
+* [CONTACT Library](https://github.com/walwalwalides/Delphi-Collection-Component/tree/master/Contact%20Library) - OLED Library( by WalWalWalides )
 
 * [ComPort Library](https://sourceforge.net/projects/comport/files/comport/) - ComPort Library ( by Dejan Crnila )
 
-* [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306) - Adafruit_SSD1306
+* [Adafruit TFTLCD-Library](https://github.com/adafruit/TFTLCD-Library) - Adafruit-TFTLCD-Library
+* [Adafruit GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library) - Adafruit-GFX-Library
+* [Adafruit-TouchScreen](https://github.com/adafruit/Adafruit_TouchScreen) - Adafruit-TouchScreen
 
 # Features  
 
