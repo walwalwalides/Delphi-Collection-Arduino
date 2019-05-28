@@ -7,7 +7,7 @@
 
 * [OLED Library](https://github.com/walwalwalides/Delphi-Component/tree/master/OLED%20Library) - OLED Library( by WalWalWalides )
 
-* [CONTACT Library](https://github.com/walwalwalides/Delphi-Collection-Component/tree/master/Contact%20Library) - OLED Library( by WalWalWalides )
+* [CONTACT Library](https://github.com/walwalwalides/Delphi-Collection-Component/tree/master/Contact%20Library) - CONTACT Library( by WalWalWalides )
 
 * [ComPort Library](https://sourceforge.net/projects/comport/files/comport/) - ComPort Library ( by Dejan Crnila )
 
