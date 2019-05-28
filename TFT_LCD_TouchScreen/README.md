@@ -1,6 +1,6 @@
 # TFT_LCD_ToucchScreen
 - Display Sale Prices Using TFT LCD TOUTCHSCRREN Via Ardouino - (Serial Communication)                     
-![](TFT_LCD_ToucchScreen.jpg) 
+![](TFT_LCD_TouchScreen.jpg) 
 
 
 ## Built With
