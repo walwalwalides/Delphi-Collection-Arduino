@@ -4,3 +4,8 @@
 - 10 Pin cable.
 - Ardouino Uno. 
 -USB Connection cable 0.4m (type B to type A)
+-----------------------------------
+- GND -> GND.
+- VCC -> VCC.
+- SCL -> SCL.
+- SDA -> SDA.
