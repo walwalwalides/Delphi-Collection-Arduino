@@ -6,6 +6,6 @@
 -USB Connection cable 0.4m (type B to type A)
 -----------------------------------
 - GND -> GND.
-- VCC -> VCC.
+- VCC -> VCC (5V).
 - SCL -> SCL.
 - SDA -> SDA.
