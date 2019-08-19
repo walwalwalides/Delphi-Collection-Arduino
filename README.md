@@ -20,3 +20,9 @@
 | [SYNCHRON_DATE_TIME](https://github.com/walwalwalides/Arduino-Collection/tree/master/SYNCHRON_DATE_TIME)|Synchronisation of DateTime Change and Save to an External Micro SD Card - (Serial Communication(SPI))|
 | [TFT_LCD_TOUTCHSCRREN](https://github.com/walwalwalides/Delphi-Collection-Arduino/tree/master/TFT_LCD_TouchScreen)|Display Sale Prices Using TFT_LCD_TOUTCHSCRREN Via Ardouino - (Serial Communication)|
 | README.md | The readme for this project
+
+------
+
+# If You Want To Donate!
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y79F36A9BGLHS&source=url)
