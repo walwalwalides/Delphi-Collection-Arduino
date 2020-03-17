@@ -4,7 +4,7 @@
 ![](M-L-DETECTOR.png) 
 
 # Sketch
-![Sketch](M&L_Sketch/M&L_DETECTOR_SK.PDF)- (Motion Light Detector)
+![Sketch](M&L_Sketch/M&L_DETECTOR_SK.PDF)- Motion Light Detector
 
 
 
