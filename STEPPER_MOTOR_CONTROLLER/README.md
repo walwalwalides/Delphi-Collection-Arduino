@@ -14,7 +14,7 @@
 - Change Rotaion Direction of Stepper Motor .
 
 # Sketch
-![Sketch](M&L_Sketch/M&L_DETECTOR_SK.PDF)- Motion Light Detector
+![Sketch](Ardouino Sketch)- Motion Light Detector
 
 
 ## Files
