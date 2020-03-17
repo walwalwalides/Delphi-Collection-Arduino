@@ -5,4 +5,4 @@
 - Ardouino Uno. 
 -USB Connection cable 0.4m (type B to type A)
 
-sketch:
+![](Circuit/Circuit Digi7Segment.png)
