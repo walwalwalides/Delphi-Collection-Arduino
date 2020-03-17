@@ -13,9 +13,8 @@
 - Set Digital Counter Via Serial Communication
 - Send text on Serial Port
 
-
-
-
+# Sketch
+* [Sketch](https://github.com/walwalwalides/Delphi-Collection-Arduino/tree/master/Digi7Segment/Ardouino%20Sketch)- Digi7Segment (Components + Sketch)
 
 
 # Licence
