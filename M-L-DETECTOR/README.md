@@ -4,8 +4,8 @@
 ![](M-L-DETECTOR.png) 
 
 # Sketch
-![Sketch](M&L_Sketch/M&L_DETECTOR_SK.PDF)- ESP32LED (Components + Sketch)
-M&L_Sketch/M&L_DETECTOR_SK.PDF
+![Sketch](M&L_Sketch/M&L_DETECTOR_SK.PDF)- (Motion Light Detector)
+
 
 
 
