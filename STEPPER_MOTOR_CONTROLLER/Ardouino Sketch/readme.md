@@ -24,4 +24,4 @@
 
 # Sketch
 
-* [](Circuit/SMC_Circuit.PDF)
+![SMC](Circuit/SMC_Circuit.PDF)
