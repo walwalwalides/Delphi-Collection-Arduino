@@ -14,7 +14,7 @@
 - Send text on Serial Port
 
 # Sketch
-![](Digi7Segment.png) 
+![](Digi7Segment/Ardouino Sketch) 
 
 
 
