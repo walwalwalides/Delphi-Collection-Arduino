@@ -4,5 +4,5 @@
 - 10 Pin cable.
 - Ardouino Uno. 
 -USB Connection cable 0.4m (type B to type A)
-
+# Sketch
 ![](Circuit/Circuit Digi7Segment.png)
