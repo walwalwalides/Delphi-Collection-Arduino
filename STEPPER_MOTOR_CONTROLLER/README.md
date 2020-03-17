@@ -14,7 +14,7 @@
 - Change Rotaion Direction of Stepper Motor .
 
 # Sketch
-![Sketch](Ardouino Sketch)- Motion Light Detector
+![Sketch](https://github.com/walwalwalides/Delphi-Collection-Arduino/tree/master/STEPPER_MOTOR_CONTROLLER/Ardouino%20Sketch) - SMC
 
 
 ## Files
