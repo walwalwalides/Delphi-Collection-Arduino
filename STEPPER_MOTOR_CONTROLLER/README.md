@@ -13,10 +13,8 @@
 - Drive 28BYJ-48 stepper Motor using ULN2003A driver board .
 - Change Rotaion Direction of Stepper Motor .
 
-
-
-
-
+# Sketch
+![Sketch](M&L_Sketch/M&L_DETECTOR_SK.PDF)- Motion Light Detector
 
 
 ## Files
