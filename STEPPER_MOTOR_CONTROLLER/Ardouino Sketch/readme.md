@@ -21,3 +21,6 @@
 - (IN2) -> D9
 - (IN3) -> D10
 - (IN4) -> D11
+
+# Sketch
+![](Ardouino Sketch/Circuit/SMC_Circuit.PDF)
