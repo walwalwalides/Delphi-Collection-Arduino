@@ -13,8 +13,8 @@
 - Set Digital Counter Via Serial Communication
 - Send text on Serial Port
 
-
-
+# Sketch
+![](Digi7Segment.png) 
 
 
 
