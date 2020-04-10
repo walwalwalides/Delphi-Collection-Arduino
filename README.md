@@ -5,6 +5,14 @@
 ![](ARDUINO_UNO.jpg)
 
 ------
+![Platforms](https://img.shields.io/badge/Supported%20platforms-Win32%20and%20Win64-red.svg)
+![GitHub](https://img.shields.io/github/license/walwalwalides/Delphi-Collection-FMX)
+
+
+![Platform](https://img.shields.io/badge/delphi->%3D_2010-glue)
+![GitHub last commit](https://img.shields.io/github/last-commit/walwalwalides/Delphi-Collection-FMX)
+
+[![GitHub stars](https://img.shields.io/github/stars/walwalwalides/Delphi-Collection-FMX)](https://github.com/walwalwalides/Delphi-Collection-FMX/stargazers)
 
 ## Contains
 
