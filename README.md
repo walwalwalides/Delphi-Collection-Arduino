@@ -31,6 +31,14 @@
 | README.md | The readme for this project
 
 ------
+## Description
+"Delphi-Collection-Arduino" contain different examples base on Andruino.
+This Collection explore different types of themes in Hardware programming like(Serial Connection,Control Element via WIFI,Syncronisation of DataTime...).
+
+As always, if you have any ideas or suggestions that would make a exemple more interesting and useful for you and anyone interested,Please let me know. 
+You can reach me under email : walwalwalides@gmail.com ,or just text me.
+
+You are welcome to join and participate to improve any choosed exemple.
 
 # If You Want To Donate!
 
