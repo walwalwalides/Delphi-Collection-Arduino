@@ -1,8 +1,13 @@
 # Arduino-Collection
-- My Own Arduino Collection   
+> My Own Arduino Collection   
+
+<p align ="center">
+<img src =ARDUINO_UNO.jpg />
+</p>
+
+
 **Authors:**  *WalWalWalides*
 (2020-2021)
-![](ARDUINO_UNO.jpg)
 
 ------
 ![Platforms](https://img.shields.io/badge/Supported%20platforms-Win32%20and%20Win64-red.svg)
@@ -18,7 +23,6 @@
 
 | File | Contents | 
 | --- | --- |
-| .gitignore | Git ignores the files in this file |
 | [ESP32LED](https://github.com/walwalwalides/Arduino-Collection/tree/master/ESP32LED) | How to Use ESP32 to Control LED With Delphi Via WiFi  |
 | [RFID_ACCESS](https://github.com/walwalwalides/Arduino-Collection/tree/master/RFID_ACCESS)  |Read RFID via ardouino (serial communication) |
 | [M&L DETECTOR](https://github.com/walwalwalides/Arduino-Collection/tree/master/M-L-DETECTOR) | Create Your Own Motion Light Detector |
@@ -28,7 +32,8 @@
 | [STEPPER_MOTOR_CONTROLLER](https://github.com/walwalwalides/Arduino-Collection/tree/master/STEPPER_MOTOR_CONTROLLER)|Create a Controller to Control a Stepper Motor Via Ardouino - (Serial Communication)|
 | [SYNCHRON_DATE_TIME](https://github.com/walwalwalides/Arduino-Collection/tree/master/SYNCHRON_DATE_TIME)|Synchronisation of DateTime Change and Save to an External Micro SD Card - (Serial Communication(SPI))|
 | [TFT_LCD_TOUTCHSCRREN](https://github.com/walwalwalides/Delphi-Collection-Arduino/tree/master/TFT_LCD_TouchScreen)|Display Sale Prices Using TFT_LCD_TOUTCHSCRREN Via Ardouino - (Serial Communication)|
-| README.md | The readme for this project
+| README.md | The readme for this project |
+| .gitignore | Git ignores the files in this file |
 
 ------
 ## Description
